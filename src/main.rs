@@ -22,9 +22,7 @@ fn main() {
             exit(1);
         }
     };
-    
-    // Since Rust doesn't allow removing the executable file,
-    // this line is omitted
+   
     
     let child = match unsafe { libc::fork() } {
         -1 => {
